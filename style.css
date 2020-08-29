@@ -2,30 +2,104 @@ body {
     font-family: 'Raleway', Helvetica, sans-serif;
     color: rgba(0,0,0,0.3);
     text-align: center;
-    /* text-transform: uppercase; */
     top: auto 20%; 
     background: linear-gradient(to right,#00ff00, #ff0000);
+    margin-top: 80px;
+}
+
+hr {
+    border-color: rgba(255, 255, 255, 0.3);
+    border-width: 2px;
+    max-width: 60%;
+}
+
+header {
+    margin-top: 70px;
 }
 
 h1 {
     font: 600 3.5em "Raleway", Helvetica, sans-serif;
     color: rgba(0,0,0,.3);
     text-align: center;
-
     text-transform: uppercase;
     width: 100%;
 }
 
+.container {
+    display: flex;
+    justify-content: center;
+    gap: 5px;
+
+}
+
+.color1, .color2 {
+    width: 150px;
+    height: 40px;
+    padding: 0px;
+    outline-color:  rgba(255, 255, 255, 0.1);
+    overflow: hidden;
+
+}
+
+.color1::-webkit-color-swatch-wrapper {
+    padding: 0;
+}
+
+.color1::-webkit-color-swatch {
+    border: none;
+}
+
+.color2::-webkit-color-swatch-wrapper {
+    padding: 0;
+}
+
+.color2::-webkit-color-swatch {
+    border: none;
+}
+
 h2 {
     font-family: "Raleway", Helvetica, sans-serif;
-    color: rgba(0,0,0,.3);
+    color: rgba(0,0,0,.4);
+    text-align: center;
+    width: 100%;
+    padding-top: 35px;
+}
+
+h3 {
+    font-family: "Raleway", Helvetica, sans-serif;
+    color: rgba(0,0,0,.4);
     text-align: center;
     width: 100%;
 }
 
+#randomColor {
+    font-family: 'Raleway', Helvetica, sans-serif;
+    font-size: 20px;
+    background-color: Transparent;
+    background-repeat:no-repeat;
+    border: none;
+    border-radius: 100px;
+    border-color: rgba(255, 255, 255, 0.3);
+    background-color: rgba(255, 255, 255, 0.1);
+    cursor:pointer;
+    overflow: hidden;
+    outline:none;
+    color: rgba(255,255,255,1);
+    padding: 10px 30px 10px 30px;
+    /* text-transform: uppercase; */
+}
+
+#randomColor:active {/*on Click*/
+    -ms-transform: translateY(4px);
+    -webkit-transform: translateY(4px);
+    transform: translateY(4px);/*Move down*/
+    border-bottom: none;/*disappears*/
+    box-shadow:2px 2px 2px rgba(255,255,255,0.3);
+}
+
 #onLoadColor {
     font: 900 1em "Raleway", Helvetica, sans-serif;
-    color: rgba(0,0,0,.3);
+    color: rgba(0,0,0,.4);
     text-align: center;
     text-transform: none;
     letter-spacing: 0.01em;
@@ -37,9 +111,12 @@ h2 {
 
 #afterChangingColor {
     font: 900 1em "Raleway", Helvetica, sans-serif;
-    color: rgba(0,0,0,.3);
+    color: rgba(0,0,0,.4);
     text-align: center;
     text-transform: none;
     letter-spacing: 0.01em;
+}
 
+footer  {
+    margin-top: 90px;
 }

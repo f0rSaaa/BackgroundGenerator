@@ -14,16 +14,7 @@ function setGradient() {
 
 }
 
-function getRandomColorNumberOne() {
-    var letters = '0123456789ABCDEF';
-    var color = '#';
-    for (var i = 0; i < 6; i++) {
-      color += letters[Math.floor(Math.random() * 16)];
-    }
-    return color;
-}
-
-function getRandomColorNumberTwo() {
+function getRandomColor() {
     var letters = '0123456789ABCDEF';
     var color = '#';
     for (var i = 0; i < 6; i++) {
@@ -33,9 +24,10 @@ function getRandomColorNumberTwo() {
 }
 
 function setRandomGradient() {
-    console.log(color1.value)
     cssPageLoad.remove();
-    body.style.background = "linear-gradient(to right,"+ getRandomColorNumberOne() +", " + getRandomColorNumberTwo() + ")";
+    color1.value = getRandomColor();
+    color2.value = getRandomColor();
+    body.style.background = "linear-gradient(to right,"+ color1.value +", " + color2.value + ")";
     css.textContent = body.style.background +";";
 
 }
